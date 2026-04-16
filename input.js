@@ -48,4 +48,23 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 
-renderTasks();
+renderTasks();let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  
+  let installBtn = document.createElement("button");
+  installBtn.innerText = "Install App";
+  installBtn.style.padding = "10px";
+  installBtn.style.marginTop = "10px";
+  
+  document.body.appendChild(installBtn);
+  
+  installBtn.addEventListener("click", () => {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => {
+      deferredPrompt = null;
+    });
+  });
+});
