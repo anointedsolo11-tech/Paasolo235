@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Todo</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#6a0dad">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>My Todo</h1>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Add task...">
+    <button onclick="addTask()">+</button>
+  </div>
+
+  <div class="buttons">
+    <button onclick="toggleDarkMode()">🌙</button>
+    <button onclick="clearTasks()">Clear</button>
+  </div>
+
+  <div id="taskList"></div>
+</div>
+
+<script src="input.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html

@@ -1,0 +1,58 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to bottom, #3a00ff, #8a00c2);
+  margin: 0;
+  color: black;
+}
+
+.container {
+  background: #eee;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 20px;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* TASK */
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background: #a5d6a7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ✅ DARK MODE FIX */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+.dark input {
+  background: #333;
+  color: white;
+}
+
+.dark .task {
+  background: #2e7d32;
+}
