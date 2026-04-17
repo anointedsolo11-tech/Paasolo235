@@ -1,0 +1,153 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #6a0dad;
+  color: white;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* HEADER */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* INPUT */
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  background-color: orange;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8c00;
+}
+
+/* CONTAINER */
+.container {
+  margin-bottom: 20px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.actions button:hover {
+  background-color: #666;
+}
+
+/* TASK LIST */
+#taskList {
+  margin-top: 20px;
+}
+
+#taskList li {
+  background: #1e293b;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+#taskList li button {
+  background-color: #dc2626;
+  color: white;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+#taskList li button:hover {
+  background-color: #b91c1c;
+}
+
+/* PAYMENT BOX */
+#paymentBox {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: none;
+}
+
+#paymentBox a {
+  color: orange;
+  text-decoration: none;
+}
+
+#paymentBox a:hover {
+  text-decoration: underline;
+}
+
+/* DARK MODE - matches JavaScript toggleDarkMode() */
+.dark-mode {
+  background: #0f172a;
+  color: white;
+}
+
+.dark-mode input {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.dark-mode button {
+  background-color: #334155;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background-color: #475569;
+}
+
+.dark-mode #taskList li {
+  background: #1e1e2f;
+}
+
+.dark-mode #paymentBox {
+  background: #1e1e2f;
+}
+
+/* INSTALL BUTTON */
+#installBtn {
+  display: none;
+  background-color: #10b981;
+}
+
+#installBtn:hover {
+  background-color: #059669;
+}

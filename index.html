@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★ My Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6a0dad">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>My Todo App</h1>
+    </header>
+
+    <div class="container">
+        <!-- INPUT -->
+        <input type="text" id="taskInput" placeholder="Add task...">
+        <button id="addBtn">Add</button>  <!-- Changed: added id, removed onclick -->
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="actions">
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+        <button id="clearTasksBtn">🗑️ Clear All</button>
+        <button id="supportBtn">💰 Support</button>
+        <button id="installBtn" style="display: none;">📱 Install App</button>
+    </div>
+
+    <!-- PAYMENT INFO (hidden by default) -->
+    <div class="paymentBox" id="paymentBox" style="display: none;">
+        <p><strong>Support Me</strong></p>
+        <p>Number: <span>0279576459</span></p>
+        <a href="https://www.cpagrip.com/admin/dash_dashboard.php" target="_blank">Open Link</a>
+    </div>
+
+    <!-- TASK LIST -->
+    <div id="taskList"></div>
+
+    <script src="input.js"></script>
+</body>
+</html>
