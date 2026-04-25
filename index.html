@@ -7,36 +7,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#000000">
-    <script>
-        atOptions = {
-        'key' : '8b69adcadf5abaeca5e5d18a72f61c0e',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
-        };
-    </script>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <title> Paasolo Todo</title>
+        <h1>My Todo App</h1>
     </header>
+
     <div class="container">
+        <!-- INPUT -->
         <input type="text" id="taskInput" placeholder="Add task...">
         <button id="addBtn">Add</button>
+
+        <!-- ACTION BUTTONS -->
+        <div class="actions">
+            <button id="darkModeBtn">🌙 Dark Mode</button>
+            <button id="clearTasksBtn">🗑️ Clear All</button>
+            <button id="supportBtn">💰 Support</button>
+            <button id="installBtn" style="display: none;">📱 Install App</button>
+        </div>
+
+        <!-- PAYMENT INFO (hidden by default) -->
+        <div class="paymentBox" id="paymentBox" style="display: none;">
+            <p><strong>Support Me</strong></p>
+            <p>Number: <span>0279576459</span></p>
+            <a href="https://www.cpagrip.com/admin/dash_dashboard.php" target="_blank">Open Link</a>
+        </div>
+
+        <!-- AD BANNER - Placed exactly where Adsterra support instructed -->
+        <div style="text-align: center; margin: 20px 0;">
+            <script>
+                atOptions = {
+                'key' : '8b69adcadf5abaeca5e5d18a72f61c0e',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+                };
+            </script>
+            <script src="https://www.highperformanceformat.com/8b69adcadf5abaeca5e5d18a72f61c0e/invoke.js"></script>
+        </div>
+
+        <!-- TASK LIST -->
+        <div id="taskList"></div>
     </div>
-    <div class="actions">
-        <button id="darkModeBtn">🌙 Dark Mode</button>
-        <button id="clearTasksBtn">🗑️ Clear All</button>
-        <button id="supportBtn">💰 Support</button>
-        <button id="installBtn" style="display: none;">📱 Install App</button>
-    </div>
-    <div class="paymentBox" id="paymentBox" style="display: none;">
-        <p><strong>Support Me</strong></p>
-        <p>Number: <span>0279576459</span></p>
-        <a href="https://www.cpagrip.com/admin/dash_dashboard.php" target="_blank">Open Link</a>
-    </div>
-    <div id="taskList"></div>
+
     <script src="input.js"></script>
 </body>
 </html>
