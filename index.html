@@ -46,6 +46,20 @@
         <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
+    <!-- PopCash Popunder Ad with Anti AdBlock -->
+    <script type="text/javascript">
+        var uid = '501707';
+        var wid = '753996';
+        var pop_tag = document.createElement('script');
+        pop_tag.src = '//cdn.popcash.net/show.js';
+        document.body.appendChild(pop_tag);
+        pop_tag.onerror = function() {
+            pop_tag = document.createElement('script');
+            pop_tag.src = '//cdn2.popcash.net/show.js';
+            document.body.appendChild(pop_tag)
+        };
+    </script>
+
     <script src="input.js"></script>
 </body>
 </html>
