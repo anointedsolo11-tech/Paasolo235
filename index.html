@@ -8,29 +8,52 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#000000">
     <meta name="ppck-ver" content="8e30d73dc8c51a2f61377ea8c9751517" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9926824008490546" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header><h1>My Todo App</h1></header>
+    <header>
+        <h1>My Todo App</h1>
+    </header>
+
     <div class="container">
         <input type="text" id="taskInput" placeholder="Enter a task...">
         <button id="addBtn">Add</button>
+
         <div class="actions">
             <button id="darkModeBtn">🌙 Dark Mode</button>
             <button id="clearTasksBtn">🗑️ Clear All</button>
             <button id="supportBtn">💰 Support</button>
         </div>
-        <div style="text-align:center;margin:15px 0;">
-            <script>atOptions={'key':'8b69adcadf5abaeca5e5d18a72f61c0e','format':'iframe','height':250,'width':300,'params':{}};</script>
+
+        <div style="text-align: center; margin: 15px 0;">
+            <script>
+                atOptions = {
+                    'key' : '8b69adcadf5abaeca5e5d18a72f61c0e',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
             <script src="https://bowlsharp.com/8b69adcadf5abaeca5e5d18a72f61c0e/invoke.js"></script>
         </div>
+
         <div id="taskList"></div>
     </div>
+
     <script type="text/javascript">
-        var uid='501707';var wid='753996';var pop_tag=document.createElement('script');
-        pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-        pop_tag.onerror=function(){pop_tag=document.createElement('script');
-        pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
+        var uid = '501707';
+        var wid = '753996';
+        var pop_tag = document.createElement('script');
+        pop_tag.src = '//cdn.popcash.net/show.js';
+        document.body.appendChild(pop_tag);
+        pop_tag.onerror = function() {
+            pop_tag = document.createElement('script');
+            pop_tag.src = '//cdn2.popcash.net/show.js';
+            document.body.appendChild(pop_tag);
+        };
     </script>
+
     <script src="input.js"></script>
 </body>
 </html>
